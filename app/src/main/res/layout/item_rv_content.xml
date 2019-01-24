@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    tools:context=".MainActivity">
+
+    <com.lonelypluto.testsectionedrecyclerview.widget.MyImageView
+        android:id="@+id/item_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/group"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:id="@+id/item_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="123"
+        android:textColor="#ffffff"
+        android:background="#88000000"
+        android:layout_alignBottom="@+id/item_iv"
+        />
+
+    <CheckBox
+        android:id="@+id/item_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/item_iv"
+        android:layout_alignTop="@+id/item_iv"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:button="@null"
+        android:background="@drawable/cb_selector"
+        android:gravity="center"
+        android:text="1"
+        />
+</RelativeLayout>
